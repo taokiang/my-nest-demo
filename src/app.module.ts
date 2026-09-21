@@ -5,9 +5,11 @@ import { DemoModule } from './demo/demo.module.js';
 import { PrismaModule } from './prisma/prisma.module';
 import { UserModule } from './user/user.module';
 import { PostModule } from './post/post.module';
+import { McpClientModule } from './mcp-client/mcp-client.module';
+import { McpAgentModule } from './mcp-agent/mcp-agent.module';
 
 @Module({
-  imports: [DemoModule, PrismaModule, UserModule, PostModule],
+  imports: [DemoModule, PrismaModule, UserModule, PostModule, McpClientModule, McpAgentModule],
   controllers: [AppController],
   providers: [AppService],
 })
